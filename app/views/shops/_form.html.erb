@@ -1,0 +1,33 @@
+<div class="container">
+
+  <%= render "layouts/errors", :object => @shop %>
+
+  <%= form_for @shop do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+
+    <%= f.label :address %>
+    <%= f.text_field :address, class: 'form-control' %>
+
+    <%= f.label :area %>
+    <%= f.text_field :area, class: 'form-control' %>
+
+    <%= f.label :description %>
+    <%= f.text_area :description, class: 'form-control' %>
+
+    <%= f.label :picture %>
+    <%= f.text_field :picture, class: 'form-control' %>
+
+    <%= f.label :opening_hours %>
+    <%= f.text_field :opening_hours, class: 'form-control' %>
+
+    <%= f.label :contact %>
+    <%= f.text_field :contact, class: 'form-control' %>
+
+    <%= f.label :website %>
+    <%= f.text_field :website, class: 'form-control' %>
+
+    <%= f.submit 'Add this shop', class: 'btn btn-lg btn-primary btn-block'%>
+  <% end %>
+
+</div>
