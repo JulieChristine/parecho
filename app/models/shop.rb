@@ -4,7 +4,7 @@ class Shop < ActiveRecord::Base
     validates :name, :presence => true
     validates :description, :presence => true
     validates :picture, :presence => true
-    validates :saving, :presence => true
+    validates :savings, :presence => true
     validates :validity, :presence => true
 
   end

@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20170525062550) do
     t.string   "name"
     t.string   "description"
     t.string   "picture"
-    t.string   "saving"
+    t.string   "savings"
     t.string   "validity"
     t.integer  "shop_id"
     t.datetime "created_at",  null: false
