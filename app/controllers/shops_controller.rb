@@ -1,23 +1,21 @@
 class ShopsController < ApplicationController
     def index
       @shops = Shop.all
-      render :index
     end
 
     def show
       @shop = Shop.find(params[:id])
-      render :show
     end
 
     def new
       @shop = Shop.new
-      render :new
     end
 
     def create
       @shop = Shop.new(shop_params)
       if @shop.save
-        redirect_to shops_path
+        flash[:notice] = "Shop successfully added!"
+        redirect_to shops_path(@shop)
       else
         render :new
       end
